@@ -2,16 +2,13 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux';
 import newGame from '../actions/newGame';
 
+class WrongCounter extends PureComponent {
 
-
-
-class GameContainer extends PureComponent {
   newGame = () => {
     const {guesses} = this.props.guesses;
     console.log(this.state)
     this.props.newGame(guesses);
   }
-
 
   render() {
     const {counter, word , guesses} = this.props.guesses
@@ -39,9 +36,7 @@ class GameContainer extends PureComponent {
 }
 
 
-
-
 const mapStateToProps = ({ guesses}) => ({guesses})
 const mapDispatchToProps = {newGame: newGame}
 
-export default connect(mapStateToProps, mapDispatchToProps)(GameContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(WrongCounter);
