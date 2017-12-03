@@ -1,10 +1,17 @@
 import React, { PureComponent } from 'react'
+import { connect } from 'react-redux';
+import addGuess from '../actions/addGuess';
 import {ALPHABET} from '../constants';
 
 
 class Guess extends PureComponent {
-  render() {
 
+  addGuess(letter) {
+    this.props.addGuess(letter.toUpperCase());
+  }
+
+  render() {
+    const { guesses } = this.props
     return (
       <div className="Guess">
         {ALPHABET.map( letter =>
@@ -19,4 +26,7 @@ class Guess extends PureComponent {
 
 
 
-export default Guess
+const mapStateToProps = ({ guesses }) => ({ guesses })
+const mapDispatchToProps = {addGuess: addGuess }
+
+export default connect(mapStateToProps,mapDispatchToProps)(Guess)
