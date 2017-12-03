@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux';
-
+import './RevealGuess.css'
 
 class RevealGuess extends PureComponent {
 

@@ -1,0 +1,10 @@
+.Guess {
+  width: 100%;
+  position: relative;
+  margin: 0 auto; }
+  .Guess .Keyboard {
+    margin-top: 1em;
+    font-size: 0.7em;
+    width: 6em;
+    height: 5em;
+    font-weight: bold; }

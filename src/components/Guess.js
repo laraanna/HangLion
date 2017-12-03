@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux';
 import addGuess from '../actions/addGuess';
 import {ALPHABET} from '../constants';
-
+import './Guess.css'
 
 class Guess extends PureComponent {
 
