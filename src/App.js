@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Guess from './components/Guess'
 import RevealGuess from './components/RevealGuess'
+import WrongCounter from './components/WrongCounter'
 import './App.css';
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
 
         <Guess />
         <RevealGuess />
+        <WrongCounter />
       </div>
     );
   }
