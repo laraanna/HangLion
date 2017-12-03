@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
+import Guess from './Guess'
 
-import './GameContainer.css'
 
 
 class GameContainer extends PureComponent {
@@ -8,7 +8,7 @@ class GameContainer extends PureComponent {
   render() {
     return (
       <div className="GameContainer">
-
+        <Guess />
       </div>
     )
   }
