@@ -8,10 +8,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="left">
+          <h1> HAKUNA MATATA </h1>
+          <Guess />
+          <RevealGuess />
+        </div>
 
-        <Guess />
-        <RevealGuess />
-        <WrongCounter />
+        <div className="right">
+          <WrongCounter />
+        </div>
       </div>
     );
   }
