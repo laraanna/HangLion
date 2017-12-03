@@ -1,4 +1,5 @@
 import { ADD_GUESS} from '../actions/addGuess'
+import { NEW_GAME} from '../actions/newGame'
 
 const words = ['simba', 'nala', 'mufasa', 'pumbaa', 'sarabi', 'rafiki', 'scar'];
 
@@ -29,6 +30,8 @@ export default (state = initialState, { type, payload } = {}) => {
       else  {
         return {...state, guesses: state.guesses.concat(payload), correct: state.correct.concat(payload) }
       }
+    case NEW_GAME :
+      return initialState
 
 
      default :
