@@ -15,7 +15,7 @@ class Guess extends PureComponent {
     return (
       <div className="Guess">
         {ALPHABET.map( letter =>
-          <button  className="Keyboard"key={letter} onClick={() => this.addGuess(letter)} >
+          <button  className="Keyboard" key={letter} onClick={() => this.addGuess(letter)} >
             {letter.toUpperCase()}
           </button> )}
       </div>

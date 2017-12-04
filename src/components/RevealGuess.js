@@ -10,11 +10,11 @@ class RevealGuess extends PureComponent {
     return (
       <div className="RevealGuess">
       {
-        word.split('').map(word => {
+        word.split('').map((word,index) => {
           if (correct.indexOf(word) !== -1) {
-            return <button > {word} </button>
+            return <button key={index}> {word} </button>
           }
-          return <button> _ </button>
+          return <button key={index}> _ </button>
         })
       }
       </div>

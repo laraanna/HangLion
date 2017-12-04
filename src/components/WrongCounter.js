@@ -12,10 +12,10 @@ class WrongCounter extends PureComponent {
   }
 
   render() {
-    const {counter, word , guesses} = this.props.guesses
+    const {counter, word , guesses, correct} = this.props.guesses
 
     const winner = word.split('').filter(function(word) {
-        return !guesses.includes(word)
+        return !correct.includes(word)
       }).length
 
     console.log(winner)
