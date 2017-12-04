@@ -29,7 +29,7 @@ class WrongCounter extends PureComponent {
         <div className="Message">
           <h2>You have {counter} more lives </h2>
           {(winner !== 0 && counter === 0) ? (<div className="PopUp"><p> You LOST </p> <button onClick={this.newGame}>TRY AGAIN</button></div>) : ""}
-          {(winner === 0 && counter !== 0) ? (<div className="PopUp"> <p> You WON</p> <button> onClick={this.newGame}>TRY AGAIN</button> </div>) : ""}
+          {(winner === 0 && counter !== 0) ? (<div className="PopUp"> <p> You WON</p> <button onClick={this.newGame}>TRY AGAIN</button> </div>) : ""}
         </div>
       </div>
     )

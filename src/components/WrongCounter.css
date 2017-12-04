@@ -24,10 +24,10 @@
     font-size: 1em;
     background-color: #bb5a2a;
     box-shadow: 1px 1px 1px #888888;
-    color: white; }
+    color: #FFFFFF; }
 
 .WrongCounter .Lion {
-  background-color: yellow;
+  background-color: #FFC300;
   margin-top: 5em; }
   .WrongCounter .Lion img {
     height: 35em; }
