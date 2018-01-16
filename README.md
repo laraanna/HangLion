@@ -21,3 +21,7 @@ yarn start
 ```
 
 ## Preview
+
+![screen shot 2018-01-16 at 12 47 39 pm](https://user-images.githubusercontent.com/22427224/34987810-c5900aea-fabc-11e7-91f2-265857d84109.png)
+
+![screen shot 2018-01-16 at 12 47 55 pm](https://user-images.githubusercontent.com/22427224/34987820-cb35ac34-fabc-11e7-9d84-c16a32c0bc6c.png)
